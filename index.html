@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Vision Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MAN.CSS">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#converter" class="nav-link">Converter</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="home" class="section active">
+                <h1>Currency Vision Pro</h1>
+                <p>Experience the future of currency conversion with real-time rates, voice recognition, and camera input.</p>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎙️</div>
+                        <h3>Voice Recoginize</h3>
+                        <p>Convert currencies hands-free with our advanced voice recognition technology.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📸</div>
+                        <h3>Camera OCR</h3>
+                        <p>Scan currency notes or text to instantly input amounts for conversion.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Global Coverage</h3>
+                        <p>Access exchange rates for over 170 currencies worldwide.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Real-time Updates</h3>
+                        <p>Get the latest exchange rates updated every minute.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="converter" class="section">
+                <h2>Currency Converter</h2>
+                <form class="conversion-form" id="conversion-form">
+                    <div class="input-wrapper">
+                        <input type="text" id="amount" placeholder="Enter amount" required>
+                        <span class="input-icon" id="voice-icon">🎤</span>
+                        <span class="input-icon" id="camera-icon" style="right: 50px;">📸</span>
+                    </div>
+                    <select id="from-currency">
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                        <option value="CHF">CHF - Swiss Franc</option>
+                        <option value="CNY">CNY - Chinese Yuan</option>
+                        <option value="GHS">GHS - Ghanaian Cedi</option>
+                        <option value="NGN">NGN - Nigerian Naira</option>
+                        <option value="ZAR">ZAR - South African Rand</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="BRL">BRL - Brazilian Real</option>
+                        <option value="RUB">RUB - Russian Ruble</option>
+                        <option value="MXN">MXN - Mexican Peso</option>
+                        <option value="KRW">KRW - South Korean Won</option>
+                        <option value="SGD">SGD - Singapore Dollar</option>
+                        <option value="NZD">NZD - New Zealand Dollar</option>
+                        <option value="TRY">TRY - Turkish Lira</option>
+                        <option value="HKD">HKD - Hong Kong Dollar</option>
+                        <option value="SEK">SEK - Swedish Krona</option>
+                        <option value="NOK">NOK - Norwegian Krone</option>
+                        <option value="DKK">DKK - Danish Krone</option>
+                        <option value="PLN">PLN - Polish Złoty</option>
+                        <option value="THB">THB - Thai Baht</option>
+                        <option value="IDR">IDR - Indonesian Rupiah</option>
+                        <option value="PHP">PHP - Philippine Peso</option>
+                        <option value="MYR">MYR - Malaysian Ringgit</option>
+                        <option value="PKR">PKR - Pakistani Rupee</option>
+                        <option value="ILS">ILS - Israeli Shekel</option>
+                        <option value="AED">AED - UAE Dirham</option>
+                        <option value="SAR">SAR - Saudi Riyal</option>
+                        <option value="QAR">QAR - Qatari Riyal</option>
+                        <option value="KWD">KWD - Kuwaiti Dinar</option>
+                    </select>
+
+                    <select id="to-currency">
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                        <option value="CHF">CHF - Swiss Franc</option>
+                        <option value="CNY">CNY - Chinese Yuan</option>
+                        <option value="GHS">GHS - Ghanaian Cedi</option>
+                        <option value="NGN">NGN - Nigerian Naira</option>
+                        <option value="ZAR">ZAR - South African Rand</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="BRL">BRL - Brazilian Real</option>
+                        <option value="RUB">RUB - Russian Ruble</option>
+                        <option value="MXN">MXN - Mexican Peso</option>
+                        <option value="KRW">KRW - South Korean Won</option>
+                        <option value="SGD">SGD - Singapore Dollar</option>
+                        <option value="NZD">NZD - New Zealand Dollar</option>
+                        <option value="TRY">TRY - Turkish Lira</option>
+                        <option value="HKD">HKD - Hong Kong Dollar</option>
+                        <option value="SEK">SEK - Swedish Krona</option>
+                        <option value="NOK">NOK - Norwegian Krone</option>
+                        <option value="DKK">DKK - Danish Krone</option>
+                        <option value="PLN">PLN - Polish Złoty</option>
+                        <option value="THB">THB - Thai Baht</option>
+                        <option value="IDR">IDR - Indonesian Rupiah</option>
+                        <option value="PHP">PHP - Philippine Peso</option>
+                        <option value="MYR">MYR - Malaysian Ringgit</option>
+                        <option value="PKR">PKR - Pakistani Rupee</option>
+                        <option value="ILS">ILS - Israeli Shekel</option>
+                        <option value="AED">AED - UAE Dirham</option>
+                        <option value="SAR">SAR - Saudi Riyal</option>
+                        <option value="QAR">QAR - Qatari Riyal</option>
+                        <option value="KWD">KWD - Kuwaiti Dinar</option>
+                    </select>
+                    <button type="submit">Convert</button>
+                </form>
+
+                <div id="loading">Loading...</div>
+                <div id="conversion-result" class="result">Conversion Result will appear here</div>
+
+                <div id="history">
+                    <h4>Conversion History</h4>
+                    <ul id="history-list"></ul>
+                </div>
+                <div id="chart-container"></div>
+            </section>
+
+            <section id="features" class="section">
+               
+                
+                    <h2>Features</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Currency Trends</h3>
+                        <p>View historical exchange rate trends with interactive charts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌙</div>
+                        <h3>Dark Mode</h3>
+                        <p>Toggle between light and dark themes for comfortable viewing.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h3>Rate Alerts</h3>
+                        <p>Set alerts for specific exchange rates and get notified.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="features" class="section">
+                <h2>Features</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Currency Trends</h3>
+                        <p>View historical exchange rate trends with interactive charts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌙</div>
+                        <h3>Dark Mode</h3>
+                        <p>Toggle between light and dark themes for comfortable viewing.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h3>Rate Alerts</h3>
+                        <p>Set alerts for specific exchange rates and get notified.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <h2>About Currency Vision Pro</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="member-image-container">
+                            <img src="hd3.jpeg" alt="Team Member 1" class="member-image">
+                        </div>
+                        <p class="member-description"> Opoku - Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image-container">
+                            <img src="hd.jpeg" alt="Team Member 2" class="member-image">
+                        </div>
+                        <p class="member-description"> Hadassah- Project organiser</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image-container">
+                            <img src="hd4.jpeg" alt="Team Member 3" class="member-image">
+                        </div>
+                        <p class="member-description">Marfo - Financial Analyst</p>
+                    </div>
+                </div>
+                
+                <p>Currency Vision Pro is a cutting-edge currency conversion tool designed to make international transactions and travel easier. With features like real-time exchange rates, voice recognition, and camera input, we're revolutionizing the way you handle currency conversions.</p>
+                <h3>New Features</h3>
+                <ul>
+                    <li>Currency Trends: Visualize exchange rate trends over time.</li>
+                    <li>Dark Mode: Reduce eye strain with our sleek dark theme.</li>
+                    <li>Rate Alerts: Stay informed about favorable exchange rates.</li>
+                    <li>Voice Recognition: Convert currencies hands-free with our advanced voice recognition technology.</li>
+                    <li>Camera OCR: Scan currency notes or text to instantly input amounts for conversion.</li>
+                    <li>Global Coverage: Access exchange rates for over 170 currencies worldwide.</li>
+                    <li>Real-time Updates: Get the latest exchange rates updated every minute.</li>
+                    <li>More: We're constantly adding new features to make Currency Vision Pro more useful and convenient for you.</li>
+                </ul>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Currency Vision Pro. All rights reserved.</p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="myscript.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCeULuoMdxMLB7qzmNbdrQ86fm1X1FqBoA",
+          authDomain: "currency-vision-c9be6.firebaseapp.com",
+          projectId: "currency-vision-c9be6",
+          storageBucket: "currency-vision-c9be6.firebasestorage.app",
+          messagingSenderId: "923778927745",
+          appId: "1:923778927745:web:0a1a0fbfdad85071ce1180",
+          measurementId: "G-GDFRPDGPDW"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
